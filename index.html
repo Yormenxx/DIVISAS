@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="p-0  box-border m-0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Divisas conversor</title>
+</head>
+<body class="bg-gray-50 flex flex-col w-full h-screen justify-center items-center gap-y-10 bg-yellow-50"  >
+
+    <img src="/pngwing.com.png" alt="divisas" class="w-1/12">
+
+
+    <h1 class="font-bold text-5xl">Conversor de monedas</h1>
+
+    <div class="container-input w-3/5 flex flex-col justify-center text-center items-center  gap-y-10">
+
+
+        <h2 class="text-3xl text-yellow-300 font-bold">Monto a convertir</h2>
+
+        <input type="number" min="0" class="w-3/6 h-8 p-2 border-2 border-yellow-300 rounded" id="valor">
+    </div>
+    
+    <div class="container-divisas flex gap-x-10">
+        
+        <label for="usd"  class="font-bold text-xl text-gray-900" ><input id="usd" type="radio" name="divisa" value="USD">USD</label>
+
+        <label for="mxn"   class="font-bold text-xl text-gray-900" ><input id="mxn" type="radio" name="divisa" value="MXN">MXN</label>
+
+        <label for="euro"   class="font-bold text-xl text-gray-900" ><input id="euro" type="radio" name="divisa" value="EURO">EURO</label>
+
+       
+    </div>
+
+    <button id="btn-Convert" class="bg-yellow-300 px-3 rounded px-3">Convert</button>
+
+    <div class=" bg-yellow-50 w-1/4 h-8  border-2 rounded border-gray-900 text-center font-bold" id="result">
+
+    </div>
+
+
+
+    <script src="/app.js">
+
+    </script>
+    
+</body>
+</html>
